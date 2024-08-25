@@ -1,12 +1,12 @@
 pipeline {
     agent any 
-        option{
+        options{
             timeout (time:3 , unit:"SECONDS")
 
         } 
         stages { 
             stage ('Ejemplo'){
-                step{
+                steps{
                     sh echo "Hola Mundo";
                 }
             }
